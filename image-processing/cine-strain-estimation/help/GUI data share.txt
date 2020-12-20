@@ -1,0 +1,9 @@
+You can use the setappdata and getappdata functions to pass values between UIs that you've developed. Since you're passing values between UIs, you want to store the values in the root so all other UIs can access them.
+
+For example, after computing "e" in your main2 UI, you can store the value to the root:
+
+setappdata(0,'evalue',e);
+By specifying a UI object handle of "0", we are telling MATLAB to store this value in the root directory. To access this value in your other UI, simple use the getappdata function:
+
+e = getappdata(0,'evalue');
+Hope this help to get you started!

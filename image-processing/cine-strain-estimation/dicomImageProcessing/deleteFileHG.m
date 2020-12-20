@@ -1,0 +1,2 @@
+function deleteFileHG(fileName)
+
