@@ -1,9 +1,14 @@
 .DS_Store/
+
+*.dat
+*.m~
+*~
+*.asv
+
 image-processing/cine-strain-estimation/PilotData20MidSACineStrainPairedComparison
 image-processing/manual-segmentation/old
 
 model-construction/averageShape
 model-construction/notUsed
 
-*.dat
-*.m~
+parameter-estimation/configure_files
