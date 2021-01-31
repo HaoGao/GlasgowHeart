@@ -12,5 +12,3 @@
 # Simulated LV dynamics
 <img src="../Figures/overlapedLVEndoSurface_MRI.png" width="600">
 
-# Simulated Bi-ventricular dynamics
-<img src="../Figures/biventricle_2.gif" width="500">
