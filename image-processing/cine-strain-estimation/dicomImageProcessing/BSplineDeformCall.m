@@ -24,7 +24,7 @@ function imgDeformedBsplineRe = BSplineDeformCall(patient_slice_data, cropConfig
  totalInstanceNum = size(patient_slice_data.SXSlice,1); 
 % %%now deform
 if bsplineDeformBool == 1
-    matlabpool(NoOfCpusAvailable);
+    parpool(NoOfCpusAvailable);
     parfor imNo = 1 : totalInstanceNum-1
         I1 = patient_slice_data.SXSlice(imNo,1).imData;
         I2 = patient_slice_data.SXSlice(imNo+1,1).imData;
@@ -33,16 +33,21 @@ if bsplineDeformBool == 1
         I2Crop = imcrop(I2,cropConfig.rect);
         
 
-        [I1 I2] = NormalizeImageLinear(I1Crop, I2Crop);
-        [Tx Ty] = BsplineDeformHG(I1, I2, options, Spacing);
+        [I1, I2] = NormalizeImageLinear(I1Crop, I2Crop);
+        [Tx, Ty] = BsplineDeformHG(I1, I2, options, Spacing);
 
         imgDeformedBsplineRe(imNo,1).Tx = Tx;
         imgDeformedBsplineRe(imNo,1).Ty = Ty;
         imgDeformedBsplineRe(imNo,1).rect = cropConfig.rect;
 
     end
-    matlabpool close;
-    
+%    parpool close;
+%     poolobj = gcp('nocreate'); % If no pool, do not create new one.
+%     if ~isempty(poolobj)
+%         delete(poolobj);
+%     end
+	delete(gcp('nocreate'));
+
     cd(resultDir);
     save imgDeformedBsplineRe imgDeformedBsplineRe;
     cd(workingDir);

@@ -6,7 +6,7 @@ clc;
 % LVWM_config;
 LVWM_config;
 segB = 1;
-imSelected =5 ;
+imSelected =1 ;
 
 
 fresh_seg = 0;

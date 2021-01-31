@@ -14,8 +14,13 @@ timeInstanceSelected = patientConfigs.timeInstanceSelected;
 sampleN = patientConfigs.sampleN;
 totalLVOTSliceLocation = size(LVOTSliceSorted,2);
 
-LGESASlice = imDesired.LGESASlice; 
-totalLGESliceLocation = size(LGESASlice,1);
+MIImagesAvailable = 0;
+if isfield('LGESASlice', imDesired)
+    MIImagesAvailable = 1;
+    LGESASlice = imDesired.LGESASlice; 
+    totalLGESliceLocation = size(LGESASlice,1);
+end
+
 
 timeInstance = timeInstanceSelected;
 
@@ -54,20 +59,22 @@ end
 
 
 %%output LGE image data 
-for imIndex = 1 : totalLGESliceLocation
-    imDataTempory = imDesired.LGESASlice(imIndex).imData;
-    imInfo1 = imDesired.LGESASlice(imIndex).imInfo;
-    imInfo = infoExtract(imInfo1);
-    imDataT = MRIMapToRealWithImageAndHeadData(imDataTempory, imInfo);
-    
-    imData(imIndex+totalSXSliceLocation + totalLVOTSliceLocation).im = imDataT;
-    
-    %%output to tecplot format
-    tecFileName = sprintf('LGE_MI_Slice_%d_Tec.dat', imIndex);
-    imgTecplotOutput(imDataT,tecFileName,resultDir);
-    
-    imDataT = [];
-    
+if MIImagesAvailable
+    for imIndex = 1 : totalLGESliceLocation
+        imDataTempory = imDesired.LGESASlice(imIndex).imData;
+        imInfo1 = imDesired.LGESASlice(imIndex).imInfo;
+        imInfo = infoExtract(imInfo1);
+        imDataT = MRIMapToRealWithImageAndHeadData(imDataTempory, imInfo);
+
+        imData(imIndex+totalSXSliceLocation + totalLVOTSliceLocation).im = imDataT;
+
+        %%output to tecplot format
+        tecFileName = sprintf('LGE_MI_Slice_%d_Tec.dat', imIndex);
+        imgTecplotOutput(imDataT,tecFileName,resultDir);
+
+        imDataT = [];
+
+    end
 end
 
 

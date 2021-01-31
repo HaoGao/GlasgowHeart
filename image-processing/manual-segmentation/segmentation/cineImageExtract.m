@@ -14,6 +14,26 @@ dicomImageIndex = 0;
 for imgIndex = 1 : imgTotalNo    
     imName = imageList(imgIndex).name;
     imInfo = dicominfo(imName);
+    %%% anolymise the data 
+    if isfield(imInfo, 'PhysicianOfRecord')
+        imInfo.PhysicianOfRecord = ' ';
+    end
+    if isfield(imInfo, 'InstitutionName')
+        imInfo.InstitutionName=' ';
+    end
+    if isfield(imInfo, 'InstitutionAddress' )
+        imInfo.InstitutionAddress = 'GlasgowHeart';
+    end
+    if isfield(imInfo, 'PatientName' )
+        imInfo.PatientName = 'Anonymous Patient';
+        imInfo.PatientID = 'Anonymous Patient ID';
+        imInfo.PatientBirthData = '19000101';
+        imInfo.Sex = 'O';
+        imInfo.PatientAge = '120Y';
+        imInfo.PatientWeight = '12.0';
+        imInfo.PatientSize = '12.0';
+    end
+    
      
     %%%decide whether this image is a dicom or not
     if strcmp (imInfo.Format,'DICOM')

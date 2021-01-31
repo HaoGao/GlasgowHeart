@@ -11,7 +11,7 @@ resultDir = 'earlyDiastole';
 %for mac computer to redefine
 if ismac
    resultDirRoot = './Results';
-   resultDir = 'HV01/earlyDiastole';
+   resultDir = 'HV01/early_diastole';
 end
 
 

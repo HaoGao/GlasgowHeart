@@ -1,0 +1,1 @@
+config file added on 21-Sep-2015 00:27:04projectDir = ''D:\gitLab\bsplinestrainanalysis\PilotData20MidSACineStrainPairedComparison\sampleData'';sampleN = 50;patientIndex = 1;projectDir = ''D:\gitLab\bsplinestrainanalysis\PilotData20MidSACineStrainPairedComparison\sampleData'';

@@ -1,1 +1,1 @@
-This folder is organized based on publications
+This folder is organized based on publications. 

@@ -1,0 +1,24 @@
+%handles structure, which will be used for future reference
+%%the best practice is not to use the handle much but save related data at each step and load it
+%%which may make it less messy for handle structure
+
+%%when creat the gui program
+handles.workingDir = workingDir;
+handles.hWindow = hWindow;
+handles.hWindowSize = hWindowSize;
+handles.MiddleSliceB = 1;
+
+%%when click one specified patient, it will load the data and saved in 
+handles.patient_config_selected = patient_config_selected;
+
+%%%output the bachFile
+handles.newBachFile = newBachFileName
+handles.existedBachFile = existedBachFileName;
+
+
+%%%load the project
+handles.projectConfigName = FileName;
+handles.projectConfigDir = PathName; 
+handles.patientConfigs = patientConfigs;
+handles.projectResultDir = projectResultDir;
+handles.sampleN = sampleN;

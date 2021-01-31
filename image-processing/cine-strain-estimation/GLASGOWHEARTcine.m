@@ -63,7 +63,7 @@ cineStrainPathsConfig; %%%this will moved to the related project menu
 %%%later, since it may conflict with others, because of function name, et
 %%%al
 
-%%%set up a figure window without menu and closing functino 
+%%%set up a figure window without menu and closing function 
 scrsz = get(0,'ScreenSize');
 width = scrsz(3)/2;
 height = scrsz(4)/2;

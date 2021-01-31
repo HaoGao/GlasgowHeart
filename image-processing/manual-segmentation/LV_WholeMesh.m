@@ -24,6 +24,7 @@ else
     cd(workingDir);
     SetParametersDefault;
 end
+NwMesh = 10; %% redefine to be 10 layers
 
 %%%only for cubic spline
 if(kS ~=4)
@@ -93,6 +94,14 @@ nodeMatMRI = rotationBackToMRICoordinateSystemt(nodeMat,resultDir);
 % TecplotHexMesh(nodeMatMRI, ElemMat,[],fid);
 uvw = NodeMat(:,4:6);
 TecplotHexMeshVec(nodeMatMRI, ElemMat,uvw,fid)
+fclose(fid);
+
+%%output a 10 layerd mesh file for tecplot
+cd(resultDir);
+fid = fopen('VentricleMesh_10Layers.dat', 'w');
+cd(workingDir);
+
+TecplotHexMeshVec(nodeMat, ElemMat, uvw, fid);
 fclose(fid);
 
 

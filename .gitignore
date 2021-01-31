@@ -6,9 +6,22 @@
 *.asv
 
 image-processing/cine-strain-estimation/PilotData20MidSACineStrainPairedComparison
+image-processing/cine-strain-estimation/old
+
 image-processing/manual-segmentation/old
+image-processing/manual-segmentation/Results/Addition002
+image-processing/manual-segmentation/Results/DA69ER01
+image-processing/manual-segmentation/Results/DA69ER02
+image-processing/manual-segmentation/Results/DA69ER03
+image-processing/manual-segmentation/Results/MatLabCode_SofTMech
 
-model-construction/averageShape
-model-construction/notUsed
+LV-MechanicsModel/averageShape
+LV-MechanicsModel/notUsed
 
-parameter-estimation/configure_files
+ConstitutiveParaInference/NoInUsed
+
+info_local.txt
+
+Results/HV01_test
+
+
