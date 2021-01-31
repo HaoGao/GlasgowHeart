@@ -1,7 +1,7 @@
 # GlasgowHeart
 GlasgowHeart platform for personalized modelling of human heart. It is organized into 4 modules, and each can be run separately. Currently matlab is the main programming language, and using scripts for run, this will require certain knowledge of Matlab. In the future, we will develop a GUI package for easy use.  
 
-<img src="../Figures/biventricle_2.gif" width="500">
+<img src="./Figures/biventricle_2.gif" width="500">
 
 
 The four modules are: 1) image processing, 2) biomechanics modelling, 3) personalization, and parameter inference of left ventricular (LV) mechanics and 4) statistical emulation as shown in the Figure. Modules 1, 2 and 3 have been developed in MATLAB by the co-authors, and module 4 is programmed in Python using Tensor Flow, Scikit-learn, XGBoost to use advanced machine-learning methods. For computational modelling in module 2, we further use LibMesh, IBAMR, Fenics for solving non-linear systems, Visit and Paraview for 3D visualization. Module 2 can also work with other commercial packages for biomechanics simulations (ABAQUS, FEAP). 
