@@ -1,4 +1,5 @@
 # GlasgowHeart:  deformation tracking for strain estimation
+<img src="../../Figures/deformableRegistration.png" width="800">
 
 ## steps
 
@@ -21,7 +22,6 @@
 * load the back file and run it. 
 
 
-<img src="../../Figures/deformableRegistration.png" width="800">
 
 ## References
 
