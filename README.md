@@ -17,6 +17,6 @@ In detail
 
 
 # Developers 
-The Heart Team from the SofTMech Centre funded by UKEPSRC, School of Mathematics and Statistics, University of Glasgow. 
+The Heart Team from the SofTMech Centre funded by UK EPSRC, School of Mathematics and Statistics, University of Glasgow. 
 
 
