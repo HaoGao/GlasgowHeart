@@ -5,4 +5,4 @@
 
 
 ## Mesh generation with AHA17 division
-<img src="../../Figures/LV_mesh.png" width="600">
+<img src="../../Figures/LV_mesh.png" width="400">
