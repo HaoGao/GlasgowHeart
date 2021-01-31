@@ -7,10 +7,10 @@
 
 
 # The LV model with layered fibre-sheet-normal fibre structure
-<img src="../Figures/LVMechanicsModel.png" width="800">
+<img src="../Figures/LVMechanicsModel.PNG" width="600">
 
 # Simulated LV dynamics
-<img src="../Figures/overlapedLVEndoSurface_MRI.png" width="800">
+<img src="../Figures/overlapedLVEndoSurface_MRI.png" width="600">
 
 # Simulated Bi-ventricular dynamics
 <img src="../Figures/biventricle_2.gif" width="800">
