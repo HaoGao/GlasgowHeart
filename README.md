@@ -19,6 +19,6 @@ In detail
 <img src="./Figures/biventricle_2.gif" width="500">
 
 # Developers 
-The Heart Team from the [SofTMech](http://www.softmech.org) Centre funded by UK EPSRC, School of Mathematics and Statistics, University of Glasgow. 
+The Heart Team, originally [GlasgowHeart](http://www.glasgowheart.org) from the [SofTMech](http://www.softmech.org) Centre funded by UK EPSRC, School of Mathematics and Statistics, University of Glasgow. 
 
 
