@@ -2,6 +2,8 @@
 
 There are 5 steps for running the optimization procedure, currently it is managed by hand to ensure each step is running properly. A simplified GUI interface will be added in the future for easy managing the configure file. 
 
+<img src="../Figures/parameter_estimation.png" width="800">
+
 ## Steps
 
 * step 1:  set up Sim_DirConfigForwardComputation_HVex.m, you will need the image_processing/manual-segmentation and LV-MechanicsModel for generating necessary data, including mesh, strain, and myofibres, and the Abaqus solver command, which further requires intel Fortran compiler to use the user subroutine for the HO2009 law.
