@@ -13,7 +13,7 @@ In detail
 
 * M3: LV models are calibrated by matching the model predictions to in vivo measurements (cavity volume and strains); Potential biomarkers, such as local stress/strain, myocardial stiffness and contractility can be summarized for each patient; A multi-step gradient-based inference and Bayesian inference are available for personalizing the LV biomechanical model;
 
-*M4: A deep-learning based automatic pipeline for predicting the LV geometry directly from cine images, which further consists of two neural networks, one for segmentation and the other one for LV geometry; machine-learning based emulators for fast parameter inference, i.e. Gaussian process, XGBoost, etc. 
+* M4: A deep-learning based automatic pipeline for predicting the LV geometry directly from cine images, which further consists of two neural networks, one for segmentation and the other one for LV geometry; machine-learning based emulators for fast parameter inference, i.e. Gaussian process, XGBoost, etc. 
 
 
 # Developers 
