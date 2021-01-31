@@ -1,7 +1,7 @@
 # GlasgowHeart:  deformation tracking for strain estimation
 <img src="../../Figures/deformableRegistration.png" width="800">
 
-## steps
+## How to run
 
 * run GLASGOWHEARTcine
 
