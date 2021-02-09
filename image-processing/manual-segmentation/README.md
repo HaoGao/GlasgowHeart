@@ -38,11 +38,10 @@
 * Function_LVWM_SASegManualUsingImpoint
  Segment short axis images for the left ventricular wall. Detailed steps are listed as Matlab Message. The procedure is the same as LVWM_DicomSampleSelection
         * Select the config file
-	* a list dialogue will appear, it starts from 1, and whenever you finish one image, it moves into next. By choosing different number, you can segment different images. Segmentation for each image will be saved after you finish each one, that means you do not need to redo those segmentations you have done 
-        * Drag a rectangular shape to cover the whole LV, right click and select “crop image”.
+	* a list dialogue will appear, it starts from 1, and whenever you finish one image, it moves into next. By choosing different number, you can segment different images. Segmentation for each image will be saved after you finish each one, that means you do not need to redo those segmentations you have done 	* 	  * Drag a rectangular shape to cover the whole LV, right click and select “crop image”.
 	* Click ok to segment, Cancle to quit the segmentation procedure. You can also use cmd+c (mac) or ctr+c (window) when you are in the segmentation procedure. Note: when the list dialogue appears, you need to click cancel to quite the segmentation
 	* A new window will show the cropped image, and maximize the window, in the left side, there are two buttons, ‘stop’ and ‘re-plot’. Put a point in the endocardial boundary either clockwise or anticlockwise way, you do not need to put too many points, around 10 will be enough. Before putting the last points, click ‘stop’ button, then put the last point. Now click ‘replot’, a fitted curve will be plotted. If you are happy with the boundary, then double press ‘space’ key in the keyboard, remember make sure the window with segmented boundary is in focus (you can click the window). If you are not happy with the boundary, you can click a point, and hold ‘left mouse key’ to move that point, and then click ‘replot’. Similarily, double press ‘space’ key to finish the endocardial boundary segmentation
-        * A new window with segmented endocardial boundary will show. In a similar way, you can define the epicardial boundary 
+	* A new window with segmented endocardial boundary will show. In a similar way, you can define the epicardial boundary 
 	* In the end of each segmentation of each image, the boundaries will be plotted in 3D with images together, it may be slow. 
 
  
