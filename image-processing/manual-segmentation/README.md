@@ -17,19 +17,19 @@
     Key variables: TimeEarlyOfDiastole, TimeEndOfSystole, SASlicePositionApex, timeInstanceSelected, and dirMidSA(seriesIndex,1).ImgDir which requires all cine images of one image plane needs to be outputed into one folder and specify the name to ImgDir. Both short and long axis cine images need to be explicitly specified for loading all images into Matlab. 
 	 
 	How to update the config file
-	 *Line 6: dicomDir = ‘the root directory of the MR images’
-         *Line 7: resultDirRoot = ‘…/some_folder/Results’
-         *Line 8: resultDir = ‘HVex/earlyDiastole’
-	 *Lines 13 to 16 are the settings for mac, you can leave it if you are using windows. You will only need to update lines 6-7 or lines 13-16 depending on your system
-     	 *Line 42: change the name to be ‘HVex’
-     	 *Line 43: the time instance at end of systole, before the aortic valve closing, numbers can be found from the dicom viewer
-         *Line 44: usually will be 1
-         *Line 45: the time instance at early of diastole, after the aortic valve closed, and the mitral valve just opens, usually two or 3 larger than the time instance of end-systole
-         *Line 50: the long-axis positions, usually 3
-         *Line 51: the number of images for one cardiac cycle, can be found in the dicom viewer
-         *Lines 80-83 are for one short-axis image planes, you will only need to update the line 81, the ImgDir, which is the folder within dicomDir. 
-         *The following codes of each block are the repetition for each short axis slices, you may need to add or comment out some blocks depending on how many short-axis slices you have
-         *Then the last three blocks for the three long axis images, update correspondingly.
+	 * Line 6: dicomDir = ‘the root directory of the MR images’
+         * Line 7: resultDirRoot = ‘…/some_folder/Results’
+         * Line 8: resultDir = ‘HVex/earlyDiastole’
+	 * Lines 13 to 16 are the settings for mac, you can leave it if you are using windows. You will only need to update lines 6-7 or lines 13-16 depending on your system
+     	 * Line 42: change the name to be ‘HVex’
+     	 * Line 43: the time instance at end of systole, before the aortic valve closing, numbers can be found from the dicom viewer
+         * Line 44: usually will be 1
+         * Line 45: the time instance at early of diastole, after the aortic valve closed, and the mitral valve just opens, usually two or 3 larger than the time instance of end-systole
+         * Line 50: the long-axis positions, usually 3
+         * Line 51: the number of images for one cardiac cycle, can be found in the dicom viewer
+         * Lines 80-83 are for one short-axis image planes, you will only need to update the line 81, the ImgDir, which is the folder within dicomDir. 
+         * The following codes of each block are the repetition for each short axis slices, you may need to add or comment out some blocks depending on how many short-axis slices you have
+         * Then the last three blocks for the three long axis images, update correspondingly.
 
 
 * LVWM_DicomSampleSelection
