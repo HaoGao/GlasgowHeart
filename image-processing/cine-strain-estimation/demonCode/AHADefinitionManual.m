@@ -41,7 +41,8 @@ hold on;pause;
                 but = 1;
                 n=1;
                 while but ==1 && n<=6
-                        [x y but]=ginputc(1, 'Color', 'y', 'LineWidth',2);
+                        %[x, y, but]=ginputc(1, 'Color', 'y', 'LineWidth',2);
+                        [x,y,but] = ginput(1);
                         if n==1 
                             plot(x,y,'b.');hold on;
                         elseif n==2

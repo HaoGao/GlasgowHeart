@@ -1,10 +1,11 @@
+%% cofigure file for one subject
+%% need to be edited manually
+%% you may need other dicom viewer for exporting image data
+%% all processed files will be saved in resultDirRoot/resultDir
 
-%resultDir = 'D:\HaoGao\OneDriveBusiness\OneDrive for Business\SoftMech\LVModelling\LVModelGenerationUsingFitting\results_volunteers\MI258_scan1'; 
-% resultDir = 'C:\Users\hg67u\ownCloud\clientsync\Stats-Heart-Modelling\Weiwei-code\LVModelGenerationUsingFitting_New_withMapping\results_volunteers\MI258_scan1';
-
-dicomDir = 'F:\MRIdata\VALVES_VALVES_kenneth\GCRC_PROJECTS_ALTERED_20151029_135136_609000';
-resultDirRoot = 'D:\HaoGao\PhDs\PhD_Alan\Results_Simulation\HV01\reconstruction';
-resultDir = 'earlyDiastole';
+dicomDir = 'dicome image folder';
+resultDirRoot = 'E:\HaoGao\Temp\GlasgowHeart-main\GlasgowHeart-main\image-processing\manual-segmentation\Results\HV01';
+resultDir = 'early_diastole';
 
 
 
@@ -22,7 +23,6 @@ cd(resultDir);
 resultDir = pwd();
 cd(workingDir);
 
-
 if ~exist(resultDir, 'dir')
     mkdir(resultDir);
 end
@@ -35,7 +35,6 @@ end
 
 %%let's figure out whether we need to move basal plane or not
 BasalMovingB = 0; %%if exist then it will try to move the first basal plane, otherwise it will not do anything
-
 sampleN = 50;
 
 %%%patient image data
@@ -72,6 +71,7 @@ basalMovingDistance = 0.0;
 %     load ResultsDirAllScans;
 %     basalMovingDistance = ResultsDirAllScans(scanIndex).moveTowardsApex;
 % end
+
 
 %%SA basal 1: %SP A44.3
 %%this is for end-diastole, in other time, such as in early-diastole and
