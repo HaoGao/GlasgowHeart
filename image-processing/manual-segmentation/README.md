@@ -16,7 +16,7 @@
 * set up the configure file which will be needed to specify the MR image folder to the varialbe: dicomDir. You will need to go through each line of the configure file to specify a different subject.  A example configure file can be found in the result file
     Key variables: TimeEarlyOfDiastole, TimeEndOfSystole, SASlicePositionApex, timeInstanceSelected, and dirMidSA(seriesIndex,1).ImgDir which requires all cine images of one image plane needs to be outputed into one folder and specify the name to ImgDir. Both short and long axis cine images need to be explicitly specified for loading all images into Matlab. 
 	 
-	How to update the config file
+<span style="color:blue">Update the config file?</span>
 	 * Line 6: dicomDir = ‘the root directory of the MR images’
          * Line 7: resultDirRoot = ‘…/some_folder/Results’
          * Line 8: resultDir = ‘HVex/earlyDiastole’
